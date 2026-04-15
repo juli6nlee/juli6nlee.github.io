@@ -1,0 +1,41 @@
+- title: "Quantum Sensing for Dark Matter Detection"
+  description: "I am currently building a precision setup for dark matter detection using a novel dual-probe scheme for alkali-noble gas magnetometry, advised by Prof. Or Katz. The project involves optical design, characterization, and photon shot noise-limited balanced photodetection to assess eeee."
+  image: /assets/images/photos/darkmatter.png
+  link: https://iontrap.aep.cornell.edu/research/dark-matter/
+  skills:
+    - "Atomic Physics"
+    - "Optics"
+    - "Autodesk Fusion"
+    - "Python"
+    - "Mathematica"
+
+- title: "Quantum Sciences Internship at SRI International"
+  description: "In Summer 2025, I worked on system integration of atomic magnetometers for localization problems at SRI in Princeton, NJ. My work included tuning FPGA-controlled DBR lasers to optimize device sensitivity, developing the software pipeline for integrated data acquisition, sensor fusion, and signal processing through an interactive GUI, and implementing an automated testbed for optical characterization."
+  image: /assets/images/photos/sri.jpg
+  link: https://www.sri.com/quantum
+  skills:
+    - "Atomic Physics"
+    - "System Integration"
+    - "TCP/IP"
+    - "SOLIDWORKS"
+    - "FPGAs"
+    - "Sensor Fusion"
+    - "Monte Carlo Simulation"
+    - "Python"
+
+- title: "Ion Trap Delivery Board"
+  description: "In Spring 2024, I joined the Katz Group and worked on designing and building the beam delivery optics for 493, 650, and 1762nm lasers in the Ba<sup>137</sup> ion trap. This involved characterizing beam divergence, chromatic shifts, and optical abberations followed by designing the delivery board in Autodesk Fusion and fabricating components in-house."
+  image: /assets/images/photos/delivery.png
+  skills:
+    - "Gaussian Optics"
+    - "Fiber Optics"
+    - "Autodesk Fusion"
+    - "Python"
+
+- title: "Nonlinear Pulse Compressor"
+  description: "During the summer of 2024, I designed and implemented a nonlinear pulse compressor for terahertz generation and spectroscopy under Prof. Ankit Disa. The project aimed to broaden the spectral bandwidth and shorten the duration of femtosecond laser pulses such that they could be used for cavity engineering to probe the ferroelectric soft mode of strontium titanate (SrTiO3). I was able to compress the pulses by three times and image the spectra with frequency-resolved optical grating (FROG)."
+  image: /assets/images/photos/plkm.png
+  skills:
+    - "Nonlinear Optics"
+    - "Python"
+    - "MATLAB"

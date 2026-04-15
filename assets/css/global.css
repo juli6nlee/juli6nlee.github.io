@@ -90,3 +90,10 @@ div.lazy {
     font-family: Source Code Pro, monospace;
 }
 
+.badge {
+    font-size: 0.85rem;
+    padding: 0.4em 0.7em;
+    border-radius: 50px;
+    display: inline-block;
+}
+
