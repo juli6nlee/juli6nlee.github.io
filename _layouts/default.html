@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ '/assets/css/global.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/global.css' | relative_url }}?v={{ site.time | date: '%s' }}">
     <script>
         (function() {
             var savedTheme = localStorage.getItem("theme");
@@ -103,8 +103,8 @@
             });
         });
     </script>
-    <script src="{{ '/assets/js/common.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/bubble_visual_hash.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/semantic_scholar_citation_count.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/common.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+    <script src="{{ '/assets/js/bubble_visual_hash.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+    <script src="{{ '/assets/js/semantic_scholar_citation_count.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
 </body>
 </html>
