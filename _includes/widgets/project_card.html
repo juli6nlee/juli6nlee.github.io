@@ -1,16 +1,20 @@
 <div class="my-3 bg-white shadow-sm rounded-xl">
     <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-project-diagram"></i> Projects</h6>
-    <div class="px-3 pb-1 small">
+    <div class="px-4 pb-2 project-list">
         {% for project in site.data.projects %}
-        <div class="media py-3 {% if forloop.first == false %}border-top border-gray{% endif %}">
+        <div class="media py-4 project-entry {% if forloop.first == false %}border-top border-gray{% endif %}">
             {% if project.image %}
-            <img src="{{ project.image | relative_url }}" class="mr-3 rounded" style="max-width: 150px;" alt="{{ project.title }}">
+            <img src="{{ project.image | relative_url }}" class="mr-4 rounded project-image" alt="{{ project.title }}">
             {% endif %}
             <div class="media-body">
-                <h6 class="mt-0 mb-1">
+                <h6 class="mt-0 mb-2 project-title">
+                    {% if project.link %}
+                    <a href="{{ project.link }}" target="_blank" rel="noopener noreferrer">{{ project.title }}</a>
+                    {% else %}
                     {{ project.title }}
+                    {% endif %}
                 </h6>
-                <p>{{ project.description }}</p>
+                <p class="project-description mb-0">{{ project.description }}</p>
                 {% if project.skills %}
                 <div class="mt-2">
                     {% for skill in project.skills %}

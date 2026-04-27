@@ -19,6 +19,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ '/assets/css/global.css' | relative_url }}">
+    <script>
+        (function() {
+            var savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "dark") {
+                document.documentElement.setAttribute("data-theme", "dark");
+            }
+        })();
+    </script>
 
     <style>
         body {
@@ -30,12 +38,12 @@
 
         a {
         /* color: #21356a; */
-        color: #0056b3;
+        color: var(--link-color);
         text-decoration: none; /* no underline */
         }
 
         a:hover {
-        color: #ff6f61;
+        color: var(--link-hover-color);
         text-decoration: underline;
         }
 
@@ -69,7 +77,7 @@
 <body class="bg-light" {{ page.body_attr }}>
     {% include navbar.html %}
     <!-- <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-fluid{% endif %}"> -->
-    <div class="container" style="max-width: 1700px;">
+    <div class="container site-shell">
         {{content}}
     </div>
     {% include footer.html %}

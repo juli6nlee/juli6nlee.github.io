@@ -1,0 +1,40 @@
+<div class="my-3 bg-white shadow-sm rounded-xl" id="contact">
+    <div class="p-4 p-md-4">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-start mb-3">
+            <div class="pr-md-4">
+                <h3 class="h5 mb-2"><i class="fas fa-envelope"></i> Contact</h3>
+                <p class="text-muted mb-0">
+                    Feel free to reach out!
+                </p>
+            </div>
+        </div>
+        <form
+            class="contact-form"
+            action="https://formsubmit.co/{{ site.data.profile.email }}"
+            method="POST"
+        >
+            <input type="hidden" name="_subject" value="Website contact from juli6nlee.github.io">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" class="d-none" tabindex="-1" autocomplete="off">
+            <input type="hidden" name="_next" value="{{ site.url }}{{ site.baseurl }}/#contact">
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="contact-name">Name</label>
+                    <input type="text" class="form-control" id="contact-name" name="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="contact-email">Email</label>
+                    <input type="email" class="form-control" id="contact-email" name="email" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea class="form-control" id="contact-message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary px-4">Send message</button>
+        </form>
+    </div>
+</div>

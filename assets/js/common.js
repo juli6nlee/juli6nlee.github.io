@@ -1,5 +1,34 @@
 // aHR0cHM6Ly9naXRodWIuY29tL2x1b3N0MjYvYWNhZGVtaWMtaG9tZXBhZ2U=
 $(function () {
+    function applyTheme(theme) {
+        if (theme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+            document.documentElement.removeAttribute('data-theme');
+        }
+
+        var toggleButton = document.getElementById('theme-toggle');
+        if (toggleButton) {
+            toggleButton.setAttribute(
+                'aria-label',
+                theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
+            );
+            toggleButton.setAttribute(
+                'title',
+                theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
+            );
+        }
+    }
+
+    var savedTheme = localStorage.getItem('theme') === 'dark' ? 'dark' : 'light';
+    applyTheme(savedTheme);
+
+    $('#theme-toggle').on('click', function () {
+        var nextTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('theme', nextTheme);
+        applyTheme(nextTheme);
+    });
+
     lazyLoadOptions = {
         scrollDirection: 'vertical',
         effect: 'fadeIn',
