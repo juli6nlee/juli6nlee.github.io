@@ -18,4 +18,5 @@ authors:
 links:
   # Code: https://github.com/luost26/academic-homepage
   Paper: https://journals.aps.org/pre/abstract/10.1103/PhysRevE.109.044901
+  arXiv: https://arxiv.org/abs/2312.03794
 ---
